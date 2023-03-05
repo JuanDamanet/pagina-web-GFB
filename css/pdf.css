@@ -1,0 +1,194 @@
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e2e2e2;
+    min-height: 580px;
+}
+.container h4{
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 28px;
+    color: var(--azul);
+}
+.sidebar-navigation-container li a {
+    position: relative;
+}
+.sidebar-navigation-container li a::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--amarillo);
+    height: 0;
+    width: 3px;
+    right: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+}
+.details {
+    color: #6d6d6d;
+    margin-bottom: 10px;
+    transition: all .5s ease-in-out;
+    padding: 20px;
+}
+.details summary {
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    height: fit-content;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.details summary > p {
+    display: inline;
+    padding-left: 50px;
+    color: #6d6d6d;
+    padding-bottom: 0px;
+}
+.details summary > p:hover {
+    background-color: rgba(168, 168, 168, 0) !important;
+}
+.details summary::marker {
+    content: '+';
+} 
+.details :hover {
+    background-color: rgba(168, 168, 168, 0.1);
+}
+.details[open] {
+    background-color: rgba(168, 168, 168, 0.1);
+    transition: all .2s ease-in;
+}
+.details[open] summary::marker {
+    content: '-';
+}
+.lista-items-individuales {
+    list-style: none;
+    display: grid;
+    gap: 5px;
+}
+.lista-items-individuales li {
+    width: 100%;
+}
+.lista-items-individuales li::marker {
+    color: #6d6d6d;
+    font-size: 70px;
+}
+.lista-items-individuales li a {
+    display: grid;
+    justify-content: center;
+    padding: 24px;
+    word-break: break-all;
+    height: fit-content;
+    font-size: 22px;
+    color: var(--azul);
+    transition: all .2s;
+    align-items: center;
+    background-color: var(--plomo);
+}
+.lista-items-individuales li > p {
+    padding-bottom: 20px;
+}
+.lista-items-individuales li a:hover {
+    transition: all .2s ease;
+    color: var(--amarillo);
+    text-decoration: underline;
+    background-color: var(--azul);
+}
+.lista-items{
+    list-style: none;
+    display: grid;
+    gap: 30px;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    margin-bottom: 40px;
+} 
+.lista-items li {
+    width: 100%;
+}
+.lista-items li::marker {
+    color: #6d6d6d;
+    font-size: 70px;
+}
+.lista-items li a {
+    display: grid;
+    justify-content: center;
+    padding: 24px;
+    margin-right: 7vw;
+    margin-left: 7vw;
+    word-break: break-all;
+    height: fit-content;
+    font-size: 22px;
+    color: var(--azul);
+    transition: all .2s;
+    align-items: center;
+    background-color: var(--plomo);
+    border-radius: 50px;
+}
+.lista-items li > p {
+    padding-bottom: 20px;
+}
+.lista-items li a:hover {
+    transition: all .2s ease;
+    color: var(--amarillo);
+    text-decoration: underline;
+    background-color: var(--azul);
+    border-radius: 50px;
+}
+.pdf-container {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.pdf-container p{
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--azul);
+}
+.sidebar-navigation-container li a:hover::after  {
+    background-color: var(--azul);
+    height: 80% !important;
+    top: 10%;
+}
+.navbar-left ul li:nth-child(4) a:after {
+    width: 90% !important;
+    left: 5%;
+}
+@media (max-width: 1440px){
+    .lista-items li a {
+        margin-right: 0vw;
+        margin-left: 0vw;
+    }
+}
+@media (max-width: 1024px){
+    .lista-items-individuales li a {
+        font-size: 20px;
+    }
+    .lista-items {
+        padding-right: 0vw;
+        padding-left: 0vw;
+    }
+    .lista-items li a {
+        font-size: 20px !important;
+    }
+    .sidebar-navigation-container li a::after {
+        right: -10px; 
+    }
+    .sidebar-navigation-container li a:hover::after {
+        background-color: var(--amarillo);
+    }
+    .pdf-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .pdf-container p {
+        font-size: 20px;
+    }
+    .container h4 {
+        font-size: 24px;
+    }
+}
+@media (max-width: 720px){
+    .lista-items-individuales li a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,139 @@
+.header-container {
+    background-color: var(--azul);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    overflow: hidden;
+}
+.logo {
+    padding: 4px;
+    height: 60px;
+}
+.logo-link {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+.navbar-left {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+    justify-content: flex-start;
+    gap: 1vw;
+}
+
+.navbar-left ul li a {
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0px 20px;
+    font-size: var(--lg);
+    white-space: nowrap;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+.navbar-left ul li {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    transition: all .2s;
+}
+.navbar-left ul li :hover {
+    width: 100%;
+    height: 100%;
+    background-color: var(--amarillo);
+    transition: all .1s;
+    border-radius: 15px;
+}
+.navbar-left ul li :active {
+    color: var(--azul);
+}
+.navbar-links a{
+    color: #000000;
+}
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+.navbar-left ul li a {
+    position: relative;
+}
+.navbar-left ul li a::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--amarillo);
+    height: 3px;
+    width: 0;
+    bottom: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+}
+.navbar-left ul li a:hover:after {
+    width: 90% !important;
+    left: 5%;
+    background-color: var(--azul);
+}
+.accionistas-button {
+    background-color: #ffae00;
+    border-radius: 15px;
+}
+
+@media (max-width: 1400px){
+    .logo-link {
+        width: 50%;
+    }
+    .hamburguer {
+        display: grid;
+        align-content: center;
+        padding-right: 20px;
+    }
+    .navbar-left {
+        position: static;
+        justify-content: space-between;
+    }
+    .navbar-left ul {
+        display: block;
+        position: fixed;
+        top: 66px;
+        left: 0;
+        padding: 0px;
+        height: 0px;
+        width: 100%;
+        overflow: hidden;
+        transition: .3s ease-out;
+        z-index: 10;
+        background-color: var(--azul);
+    }
+    .navbar-left ul li{
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    .navbar-left ul li a{
+        padding: 20px 0;
+        width: 100%;
+    }
+    .navbar-left ul li :hover {
+        border-radius: 0;
+    }
+    .show {
+        height: 366px !important;
+    }
+    .accionistas-button {
+        border-radius: 0px;
+    }
+    
+}

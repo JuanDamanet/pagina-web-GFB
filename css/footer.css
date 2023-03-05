@@ -1,0 +1,102 @@
+.footer-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 20px;
+    font-size: 20px;
+}
+.footer-icons {
+    width: 70%;
+    padding: 50px;
+    box-sizing: border-box;
+    transition: all .2s;
+}
+.footer-icons:hover {
+    border-radius: 25px;
+    background-color: #6e6e6e3a;
+    transform:scale(1.02);
+    transition: all .2s;
+}
+.footer-icons-links {
+    width: 25px;
+    padding-right: 10px;
+    box-sizing: content-box;
+    transform: translate(0,5px);
+}
+.footer-info-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+.socials-container {
+    text-align: center;
+}
+/*.socials-container > p {
+    padding-bottom: 20px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    font-weight: bold;
+}*/
+.contact-info-container {
+    width: 100%;
+}
+.contact-info-container > p{
+    padding-bottom: 20px;
+    width: 100%;
+    display: grid;
+    font-weight: bold;
+    justify-content: center;
+}
+.contacts-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+.location-container p{
+    padding: 5px;
+}
+.phones-container p{
+    padding: 5px;
+    word-break: break-all;
+}
+.copyright-container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+}
+.contact-info-container > p{
+    display: grid;
+}
+@media (max-width: 1440px) {
+    .footer-container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .footer-info-container {
+        font-size: 18px;
+        
+    }
+}
+@media (max-width: 1024px) {
+    .footer-info-container {
+        grid-template-columns: none;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 720px) {
+    .contacts-container {
+        grid-template-columns: none;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .location-container {
+        width: 100%;
+    }
+    .phones-container {
+        width: 100%;
+    }
+}

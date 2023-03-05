@@ -1,0 +1,35 @@
+:root {
+    --plomo: #cccccc;
+    --amarillo: #FFD200;
+    --blanco: #FFFFFF;
+    --azul: #003E7E;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --swiper-theme-color: #e8eded;
+}
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;     
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 160px;
+}
+body {
+    font-family: 'formata';
+    line-height: 1.2;
+    
+}
+@font-face {
+    font-family: 'formata';
+    src: url(../fonts/formata.ttf);
+}

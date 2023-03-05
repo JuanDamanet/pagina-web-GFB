@@ -1,0 +1,4 @@
+.sidebar-navigation-container li:nth-child(5) a::after {
+    height: 80% !important;
+    top: 10%;
+}

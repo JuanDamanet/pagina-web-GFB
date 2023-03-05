@@ -1,0 +1,4 @@
+.navbar-left ul li:nth-child(6) a:after {
+    width: 90% !important;
+    left: 5%;
+}
