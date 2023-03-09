@@ -15,6 +15,9 @@
     );
     gap: 5vw;
 }
+.news-cards > a {
+    text-decoration: none;
+}
 .slider {
     width: 100%;
     background-color: var(--azul);
@@ -86,16 +89,20 @@
     box-shadow: 2.5px 1.5px 7.5px -0.5px #414141;
     border-style: none;
     transition: all .2s;
+    height: 100%;
 }   
 .card-container:hover {
     transition: all .2s;
     transform: scale(1.02);
 }
 .card-image {
+    height: 250px;
     width: 100%;
 }
 .card-text-container {
     padding: 30px;
+    padding-top: 10px;
+    justify-self: center;
 }
 .card-container p {
     color: var(--blanco);

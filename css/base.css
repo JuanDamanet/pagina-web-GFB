@@ -22,7 +22,7 @@ html {
     font-size: 62.5%;
     font-size: 1.6rem;
     scroll-behavior: smooth;
-    scroll-padding-top: 160px;
+    scroll-padding-top: 240px;
 }
 body {
     font-family: 'formata';
@@ -32,4 +32,9 @@ body {
 @font-face {
     font-family: 'formata';
     src: url(../fonts/formata.ttf);
+}
+@media (max-width: 1440px) {
+    html {
+        scroll-padding-top: 160px;
+    }
 }
